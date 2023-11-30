@@ -1,0 +1,91 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: static;   
+    display: block;
+}
+
+.bg {
+    position: absolute;
+    top: 5rem;
+    right: 4rem;
+    /* z-index: -1; */
+    object-fit: contain;
+    width: 500px; 
+    height: 100vh; 
+}
+
+
+.introContent {
+    color:  black;
+    height: 100vh;
+    width: 150vw;
+    padding: 12rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: block;
+    justify-self: center;
+    margin-left: 0 auto;
+}
+
+.hello {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.introName {
+    color: rgb(114, 116, 114);
+    font-weight: 400;
+}
+
+.introText {
+    font-weight: 200;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.btn {
+    background: rgb(126, 124, 124);
+    margin: 1rem 2rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 20px;
+}
+
+.btnImg {
+    object-fit: cover;
+    margin: 0.2rem 0.25rem;
+    height: 1.5rem;
+}
+
+@media screen and (max-width:1110px){
+    .bg {
+        right: 0;  /* Adjust positioning for smaller screens */
+        width: 100%;  /* Make the background image full width */
+        height: auto;  /* Maintain aspect ratio */
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .bg {
+        position: static;
+        right: 0;
+        width: 100%;
+        height: 70%;
+    }
+
+    .introContent {
+        padding: 0; /* Adjust padding for smaller screens */
+        text-align: center;
+        width: 100%;
+        font-size: medium;
+    }
+}
