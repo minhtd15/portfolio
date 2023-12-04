@@ -1,0 +1,35 @@
+#about {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;   
+    display: flex; /* Use flexbox for easier alignment */
+}
+
+.aboutPic {
+    position: absolute;
+    z-index: 2;
+    object-fit: contain;
+    width: 730px; 
+    height: 100vh;
+    left: 80px; /* Align to the left side of the screen */
+    top: 0;
+}
+
+.aboutContent {
+    color: black;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8l3KG1CQVtbK3QwtsiNfCNBosPOTijeGRWw&usqp=CAU);
+    padding-left: 50%;
+    padding-right: 5%;
+    padding-top: 15%;
+}
+
+.helloAbout {
+    font-weight: 800;
+    font-size: xxx-large;
+}
+
+.aboutDetail {
+    font-weight: 300;
+    font-size: larger;
+}
