@@ -1,16 +1,13 @@
 /* skills.css */
 
-#portfolio-my-skill {
-    /* Add styles for the aside element, if needed */
-}
-
-.msbg {
+.mySkillsBg {
     background-image: url(https://fptshop.com.vn/uploads/originals/2022/6/22/637915136311660975_danh-gia-macbook-pro-m2-2022-0.JPG);
     background-repeat: no-repeat;
-    background-size: cover; /* Cover the entire container */
+    background-size: contain; /* Cover the entire container */
     width: 100%;
     height: 100vh; /* Cover the entire screen vertically */
     color: black; /* Set text color or any other styles you want for the content */
     padding: 0;
-    margin: 0; /* Remove default margin to ensure the container covers the entire screen */
+    margin: auto;
+    /*margin-top: 0;  Remove default margin to ensure the container covers the entire screen */
 }

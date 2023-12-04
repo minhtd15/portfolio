@@ -1,0 +1,10 @@
+@media screen and (max-width:1110px){
+    .mobMenu {
+        right: 0;  /* Adjust positioning for smaller screens */
+        width: 100%;  /* Make the background image full width */
+        height: 100%;  /* Maintain aspect ratio */
+        top: 40;
+        bottom: 0;
+        position: static;
+    }
+}

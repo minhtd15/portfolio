@@ -1,0 +1,74 @@
+#contact {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contactContainer {
+    color:  white;
+    height: 100vh;
+    width: 150vw;
+    padding: 8rem;
+    font-size: 3rem;
+    display: block;
+    background-color: rgb(116, 116, 116);
+    padding-left: 15%;
+}
+
+.git {
+    position: absolute;
+    font-size:xxx-large;
+    color: white;
+    margin-top: -40rem;
+    margin-left: 25%;
+}
+
+.lwt {
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 80px;
+    margin-top: -15rem;
+}
+
+.description {
+    font-size: large;
+    font-weight: 200;
+}
+
+.contactForm {
+    margin: 5rem -10rem 0 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding: auto 10rem;
+    width: 100%; /* Set the width to 100% */
+    max-width: 60rem; /* Set a maximum width if needed */
+}
+
+.name, .email, .msg {
+    font-size: medium;
+    width: 100%;
+    max-width: 40rem;
+    margin: 0.5rem;
+    padding: 1rem; /* Adjust the padding as needed */
+    color: black;
+    border: none;
+    border-radius: 0.5rem;
+    background: rgb(222, 222, 222);
+    box-sizing: border-box; /* Include padding in the total width/height */
+}
+
+.submitBtn {
+    background: white;
+    color: #615f5f;
+    border: none;
+    padding: 0.75rem 3.5rem;
+    border-radius: 0.75rem;
+    margin: 2rem;
+}
