@@ -50,6 +50,7 @@
     border-radius: 2rem;
     margin-right: 2rem;
     margin-top: 1rem;
+    transition: transform 0.3s ease;
 }
 
 .desktopMenuImg {
@@ -58,6 +59,11 @@
     width: 1rem;
     margin: 1rem;
 }
+
+.desktopMenuBtn:hover {
+    /* Scale the button on hover */
+    transform: scale(1.1);
+  }
 
 
 .navMenu {

@@ -13,7 +13,7 @@
     right: 2rem;
     z-index: 1;
     object-fit: contain;
-    width: 525px; 
+    width: 500px; 
     height: 80vh; 
 }
 
@@ -60,7 +60,13 @@
     border: none;
     border-radius: 2rem;
     font-size: 20px;
+    transition: transform 0.3s ease;
 }
+
+.btn:hover {
+    /* Scale the button on hover */
+    transform: scale(1.1);
+  }
 
 .btnImg {
     object-fit: cover;
@@ -72,16 +78,20 @@
     .bg {
         right: 0;  /* Adjust positioning for smaller screens */
         width: 80%;  /* Make the background image full width */
-        height: 100%;  /* Maintain aspect ratio */
-        top: 40;
-        bottom: 0;
-        position: static;
+        height: 70%;  /* Maintain aspect ratio */
+        margin-left: 8%;
+        bottom: -5rem;
+        position: relative;
+    }
+    .hello {
+        font-size: xxx-large;
     }
     .introContent {
         padding: 0; /* Adjust padding for smaller screens */
+        padding-top: 5rem;
         text-align: center;
         width: 100%;
-        font-size: medium;
+        font-size: xxx-large;
     }
 }
 
@@ -96,10 +106,14 @@
         margin-top: auto;
     }
 
+    .hello {
+        font-size: 1.5rem;
+    }
+
     .introContent {
         padding: 0; /* Adjust padding for smaller screens */
         text-align: center;
         width: 100%;
-        font-size: medium;
+        font-size: x-large;
     }
 }
