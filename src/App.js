@@ -8,9 +8,10 @@ import Contact from "./components/ Contact/contact.tsx";
 function App() {
   return (
     <div className="App">
-      <Navbar className="navbar" style="position:fixed top:0"/>
+      <Navbar className="navbar" />
       <Intro className="introNavbar"/>
       <About className="about"></About>
+      <Skills className="skills"></Skills>
       <Contact className="contact"></Contact>
       <MyContact className="myContact"></MyContact>
       {/* <Skills /> */}

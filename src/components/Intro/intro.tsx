@@ -21,6 +21,28 @@ const fadeInVariants = {
 
 const Intro: React.FC = () => {
     const [showMenu, setShowMenu] = useState(false);
+    const handleDownloadClick = () => {
+        // Create a Blob with the PDF data or provide the PDF file URL
+        const pdfBlob = new Blob(["/Users/minhtong/Desktop/DevelopingWeb/portfolio/src/assets/aboutPic.png"], { type: 'application/pdf' });
+
+        // Create a temporary link element
+        const link = document.createElement('a');
+
+        // Set the download attribute with the desired file name
+        link.download = 'tongducminhCV.pdf';
+
+        // Create an object URL for the Blob and set it as the href attribute
+        link.href = window.URL.createObjectURL(pdfBlob);
+
+        // Append the link to the document
+        document.body.appendChild(link);
+
+        // Trigger a click event on the link
+        link.click();
+
+        // Remove the link from the document
+        document.body.removeChild(link);
+    };
     // const isSmallScreen = useMediaQuery({ maxWidth: 800 });
     return (
         <div id="intro" className="introContainer">
@@ -40,7 +62,9 @@ const Intro: React.FC = () => {
                     repeat={Infinity}></TypeAnimation>
                 {/* <p className="introPara">I am a fresher at Web Developer with experience of <br></br>coding BackEnd and FrontEnd</p> */}
                 <br />
-                <Link><button className="btn">Download CV</button></Link>
+                <Link>
+                    <button className="btn" onClick={handleDownloadClick}>Download CV</button>
+                </Link>
                 <motion.img
                     // variants={fadeIn('down', 1.2)}
                     // initial="hidden"

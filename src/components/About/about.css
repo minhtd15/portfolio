@@ -7,13 +7,10 @@
 }
 
 .aboutPic {
-    position: absolute;
-    z-index: 2;
-    object-fit: contain;
-    width: 730px; 
-    height: 100vh;
-    left: 80px; /* Align to the left side of the screen */
-    top: 0;
+    position: relative;
+    width: 650px; 
+    top: -35rem;
+    right: 45rem;
 }
 
 .aboutContent {
@@ -21,7 +18,7 @@
     background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8l3KG1CQVtbK3QwtsiNfCNBosPOTijeGRWw&usqp=CAU);
     padding-left: 50%;
     padding-right: 5%;
-    padding-top: 15%;
+    padding-top: 12%;
 }
 
 .helloAbout {
@@ -32,4 +29,46 @@
 .aboutDetail {
     font-weight: 300;
     font-size: larger;
+}
+
+@media screen and (max-width:1000px) {
+    .aboutPic {
+        display: none;
+    }
+    .helloAbout {
+        text-align: center;
+        font-size: xx-large;
+    }
+    .aboutContent {
+        padding-left: 10%;
+        padding-top: 30%;
+        align-items: center;
+        font-size: small;
+        width: fit-content;
+    }
+    .btn {
+        padding: 5% 5%;
+        font-size: large;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .aboutPic {
+        display: none;
+    }
+    .helloAbout {
+        align-items: center;
+        font-size: xx-large;
+    }
+    .aboutContent {
+        padding-left: 10%;
+        padding-top: 30%;
+        align-items: center;
+        font-size: small;
+        width: fit-content;
+    }
+    .btn {
+        padding: 5% 8%;
+        font-size: large;
+    }
 }

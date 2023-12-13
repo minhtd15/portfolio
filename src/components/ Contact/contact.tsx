@@ -14,14 +14,12 @@ function Contact() {
                 whileInView={'show'}
                 viewport={{ once: false, amount: 0.3 }}
                 className='contactContent'>
-                {/* text */}
                 {/* <p className='git'>Get in touch</p> */}
-                <div className='contactTitle'>
                     <br />
                     <p className='lwt'>Let's work <br />together!</p>
                     <p className='description'> Please fill out the form to discuss any work <br></br>opportunities</p>
-                </div>
                 {/* form */}
+
             </motion.div>
             <motion.form
                 variants={fadeIn('left', 0.2)}

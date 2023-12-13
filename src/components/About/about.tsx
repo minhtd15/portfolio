@@ -19,15 +19,7 @@ const About: React.FC = () => {
     return (
         <div id="about" className="aboutContiner">
             <div className="aboutContent">
-                <motion.img
-                    variants={fadeIn('right', 0.2)}
-                    initial="hidden"
-                    whileInView={'show'}
-                    viewport={{ once: false, amount: 0.3 }}
-                    src={aboutPic}
-                    alt="Profile"
-                    className='aboutPic'>
-                </motion.img>
+                
                 <h2 className="helloAbout">About Me</h2>
                 <br />
                 <motion.span
@@ -42,6 +34,15 @@ const About: React.FC = () => {
                     <p>Love exploring new things, creating cool projects. My way of learning is via approaching actual experience, I will learn everything I need to be able to do it. I am also an enthusiast of sports, photography and drawings.</p>
                     <Link><button className="btn">My resume</button><button className="btn">Others</button></Link>
                 </motion.span>
+                <motion.img
+                    variants={fadeIn('right', 0.2)}
+                    initial="hidden"
+                    whileInView={'show'}
+                    viewport={{ once: false, amount: 0.3 }}
+                    src={aboutPic}
+                    alt="Profile"
+                    className='aboutPic'>
+                </motion.img>
             </div>
         </div>
     )
