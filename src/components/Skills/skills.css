@@ -1,13 +1,60 @@
-/* skills.css */
+/* skills.css
 
 .mySkillsBg {
     background-image: url(https://fptshop.com.vn/uploads/originals/2022/6/22/637915136311660975_danh-gia-macbook-pro-m2-2022-0.JPG);
     background-repeat: no-repeat;
-    background-size: contain; /* Cover the entire container */
+    background-size: contain; 
     width: 100%;
-    height: 100vh; /* Cover the entire screen vertically */
-    color: black; /* Set text color or any other styles you want for the content */
+    height: 100vh; 
+    color: black; 
     padding: 0;
     margin: auto;
-    /*margin-top: 0;  Remove default margin to ensure the container covers the entire screen */
+} */
+
+#mh-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.eachSkill {
+    justify-content: center;
+    text-align: center;
+}
+
+.circular-progress {
+     position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    /* background: conic-gradient(#1b1b1b 3.6deg, white 0deg); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 135px;
+    width: 135px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.progress-value {
+    position: relative;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 600;
+    color: black;
+}
+
+.text {
+    font-size: 15px;
+    font-weight: 500;
+    color: black ;
+    align-items: center;
 }
