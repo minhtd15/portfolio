@@ -10,7 +10,7 @@
 .bg {
     position: absolute;
     bottom: 0;
-    right: 2rem;
+    right: 8rem;
     z-index: 1;
     object-fit: contain;
     width: 500px; 
@@ -73,6 +73,7 @@
     margin: 0.2rem 0.25rem;
     height: 1.5rem;
 }
+
 
 @media screen and (max-width:1230px){
     .bg {

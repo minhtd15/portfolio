@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
             <div className="desktopMenu">
                 <Link to='intro' activeClass='active' smooth={true} spy={true} offset={-100} duration={1000} className="desktopMenuListItem">Home</Link>
                 <Link to='about' activeClass='active' smooth={true} spy={true} className="desktopMenuListItem">About</Link>
-                <Link className="desktopMenuListItem">Portfolio</Link>
+                <Link to='mh-skills' activeClass='active' smooth={true} spy={true} className="desktopMenuListItem">Skills</Link>
                 <Link className="desktopMenuListItem">Clients</Link>
             </div>
             <button className="desktopMenuBtn" onClick={handleContactButtonClick}>
