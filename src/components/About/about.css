@@ -9,8 +9,8 @@
 .aboutPic {
     position: relative;
     width: 650px; 
-    top: -35rem;
     right: 45rem;
+    bottom: 34rem;
 }
 
 .aboutContent {
@@ -31,30 +31,32 @@
     font-size: larger;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1325px) {
     .aboutPic {
-        display: none;
+        position: relative;
+        width: fit-content;
+        width: 600px;
+        right: 40rem;
+        top: -32rem;
     }
     .helloAbout {
         text-align: center;
         font-size: xx-large;
     }
-    .aboutContent {
-        padding-left: 10%;
-        padding-top: 30%;
-        align-items: center;
-        font-size: small;
-        width: fit-content;
+    .aboutDetail {
+        justify-content: center;
     }
     .btn {
-        padding: 5% 5%;
         font-size: large;
     }
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:430px) {
     .aboutPic {
-        display: none;
+        position: relative;
+        width: 70%;
+        top: 2px;
+        left: 15%;
     }
     .helloAbout {
         align-items: center;
@@ -66,9 +68,10 @@
         align-items: center;
         font-size: small;
         width: fit-content;
+        position: relative;
     }
     .btn {
-        padding: 5% 8%;
+        padding: 5% 5%;
         font-size: large;
     }
 }
